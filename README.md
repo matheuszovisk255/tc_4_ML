@@ -1,7 +1,7 @@
 # 📈 Tech Challenge — Fase 4 (Grupo 74)
 ## Deep Learning aplicado à previsão de preços de ações com LSTM
 
-Este projeto aplica uma rede neural **LSTM** para **prever o preço de fechamento (Close)** de ações usando histórico do **Yahoo Finance**, e disponibiliza o modelo via **API REST (FastAPI)** consumida por uma **interface Streamlit**. fileciteturn7file0L4-L17
+Este projeto aplica uma rede neural **LSTM** para **prever o preço de fechamento (Close)** de ações usando histórico do **Yahoo Finance**, e disponibiliza o modelo via **API REST (FastAPI)** consumida por uma **interface Streamlit**. 
 
 ---
 
@@ -17,7 +17,7 @@ Este projeto aplica uma rede neural **LSTM** para **prever o preço de fechament
   - **/metrics** (Prometheus)
 - **App**: Streamlit (estilo notebook) que chama a API e mostra gráficos/resultados.
 
-> A intenção do challenge é cobrir a pipeline (coleta → pré-processamento → treinamento → métricas → deploy/consumo). fileciteturn7file0L21-L33
+> A intenção do challenge é cobrir a pipeline (coleta → pré-processamento → treinamento → métricas → deploy/consumo). 
 
 ---
 
@@ -183,7 +183,7 @@ Exporta métricas do Prometheus (contadores e histogramas) para observar latênc
 ## 🧠 Como o modelo funciona (explicação clara)
 
 ### 1) Problema
-Você quer prever o **Close** de um ativo usando a própria sequência histórica de closes. fileciteturn7file0L11-L16
+Você quer prever o **Close** de um ativo usando a própria sequência histórica de closes. 
 
 ### 2) Normalização e janela (lookback)
 A LSTM recebe **janelas** de tamanho fixo:
@@ -192,7 +192,7 @@ A LSTM recebe **janelas** de tamanho fixo:
 - Para prever o próximo dia, você dá ao modelo os **15 últimos closes**
 - Isso vira um tensor com shape: **(batch, window_size, 1)**
 
-A normalização com `MinMaxScaler` melhora estabilidade do treino e evita que o modelo exploda por escala. fileciteturn7file0L31-L33
+A normalização com `MinMaxScaler` melhora estabilidade do treino e evita que o modelo exploda por escala. 
 
 ### 3) Previsão multi-step (futuro)
 No `/predict/yfinance`, a previsão é **iterativa**:
@@ -256,7 +256,7 @@ Soluções:
 
 ## 📊 Métricas (o que significam)
 
-O backtest retorna (pelo menos) estas métricas: fileciteturn7file0L44-L48
+O backtest retorna (pelo menos) estas métricas: 
 
 - **MAE**: erro absoluto médio (em unidades de preço)
 - **RMSE**: penaliza erros grandes (sensível a outliers)
@@ -280,5 +280,5 @@ Acesse:
 
 
 ## 👥 Grupo 74
-- Joanna de Cássia Rodrigues Valadares — Git: https://github.com/Decassia fileciteturn7file0L118-L123
-- Matheus Pereira de Jesus — contato: matheusjesus2000@hotmail.com fileciteturn7file0L124-L127
+- Joanna de Cássia Rodrigues Valadares — Git: https://github.com/Decassia 
+- Matheus Pereira de Jesus — contato: matheusjesus2000@hotmail.com 
