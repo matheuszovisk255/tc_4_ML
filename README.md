@@ -23,7 +23,7 @@ Este projeto aplica uma rede neural **LSTM** para **prever o preço de fechament
 
 ## 🗂️ Estrutura do projeto (referência)
 
-Exemplo de estrutura típica (ajuste se seu repo estiver diferente):
+Exemplo de estrutura típica :
 
 ```
 .
@@ -73,7 +73,7 @@ pip install -r requirements.txt
 
 ## 🔐 Configuração do `.env`
 
-Exemplo (baseado no seu `.env`):
+Exemplo:
 
 ```env
 # Caminhos dos artefatos
