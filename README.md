@@ -265,18 +265,8 @@ O backtest retorna (pelo menos) estas métricas:
 
 ---
 
-## 📌 MLflow (opcional) — por que sua UI fica “vazia”
-
-### Como rodar o UI local
-
-No diretório do projeto:
-
-```powershell
-mlflow ui --backend-store-uri file:./mlruns --port 5000
-```
-
-Acesse:
-- `http://127.0.0.1:5000`
+## 📌 MLflow 
+### Tem um video nos arquivos explicando o MLFLOW no nosso codigo
 
 
 
