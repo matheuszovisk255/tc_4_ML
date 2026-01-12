@@ -268,6 +268,8 @@ O backtest retorna (pelo menos) estas métricas:
 ## 📌 MLflow 
 ### Tem um video nos arquivos explicando o MLFLOW
 
+- Para executar na maquina local e repetir os valores do video: python train.py --symbol AAPL --start 2018-01-01 --end 2025-07-31 --lookback 60
+
 
 
 ## 👥 Grupo 74
