@@ -218,6 +218,7 @@ No seu app Streamlit, a variável **base_url** precisa apontar para a API:
 
 - Local: `http://localhost:8000`
 - Online (Render): `https://tc-4-ml.onrender.com`
+- Streamlit online: https://enwtamd2qu9ywdgh34gvcm.streamlit.app/
 
 ### Rodando local
 
