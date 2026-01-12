@@ -266,7 +266,7 @@ O backtest retorna (pelo menos) estas métricas:
 ---
 
 ## 📌 MLflow 
-### Tem um video nos arquivos explicando o MLFLOW no nosso codigo
+### Tem um video nos arquivos explicando o MLFLOW
 
 
 
